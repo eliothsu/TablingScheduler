@@ -6,7 +6,7 @@ class TablingReporter():
     number_of_days = -1
     slots_per_day = -1
 
-    def __init__(self, schedule_file, output_file, noshow, swap):
+    def __init__(self, schedule_file, noshow, swap):
         self.schedule = json.load(open(schedule_file))
         self.number_of_days = len(self.schedule)
         self.slots_per_day = len(self.schedule[0])
@@ -79,8 +79,7 @@ class TablingReporter():
 if __name__=="__main__":
     parser = argparse.ArgumentParser(description = "Tabling Reporter", epilog = "\"Tabling slot number\" is as follows: 0 for 10-11am Monday, 1 for 11am-12pm Monday... 4 for 10-11am Tuesday, and so on")
     parser.add_argument("week_schedule", type=str, help = "Weekly schedule to modify, JSON")
-    parser.add_argument("--outfile", type=str, help = "Write output to member data file: -w week3_data.json")
     parser.add_argument("--noshow", nargs=2, type=str, help = "Report a no-show: --noshow \"Name of person\" [tabling slot number]")
     parser.add_argument("--swap", nargs=4, type=str, help = "Report a tabling swap: -s \"Name 1\" [slot #1] \"Name 2\" [slot #2]")
     args = parser.parse_args()
-    scheduler = TablingReporter(args.week_schedule, args.outfile, args.noshow, args.swap)
+    scheduler = TablingReporter(args.week_schedule, args.noshow, args.swap)
