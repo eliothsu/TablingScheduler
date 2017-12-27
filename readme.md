@@ -44,4 +44,14 @@ This set of commands would indicate the following:
 The numbers next to each name represent the "tabling slot number" to which each person
 was originally assigned. The "tabling slot number" can be found by counting the number
 of slots that have preceeded that slot in the week: 0 for Monday at 10am, 1 for Monday
-at 11am, etc. up to 19 for Friday at 1pm. 
+at 11am, etc. up to 19 for Friday at 1pm.
+
+Finally, to save this schedule to memory (remembering who has tabled with whom for
+future weeks), run:
+
+```
+py tabling_writer.py \path\to\out_week1.json \path\to\week1.json \path\to\week2.json
+```
+
+This will generate a JSON file at `\path\to\week2.json` that is valid as input to
+`tabling_annealer.py`, such that the entire process above can be repeated for future weeks.
