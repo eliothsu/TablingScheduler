@@ -1,0 +1,79 @@
+{"data": {
+	"Bob Feng": {
+		"officer":"True",
+		"schedule": [
+			["True", "False", "True"]
+		],
+		"tabled_with": []
+	},
+	"David Pailet": {
+		"officer":"False",
+		"schedule": [
+			["True", "True", "True"]
+		],
+		"tabled_with": []
+	},
+	"Meejin Choi": {
+		"officer":"True",
+		"schedule": [
+			["True", "True", "False"]
+		],
+		"tabled_with": []
+	},
+	"Tae Kim": {
+		"officer":"True",
+		"schedule": [
+			["False", "True", "False"]
+		],
+		"tabled_with": []
+	},
+	"Eliot Hsu": {
+		"officer":"True",
+		"schedule": [
+			["False", "False", "True"]
+		],
+		"tabled_with": []
+	},
+	"Tonya Nguyen": {
+		"officer":"False",
+		"schedule": [
+			["True", "True", "True"]
+		],
+		"tabled_with": []
+	},
+	"Copter Suksuthamwong": {
+		"officer":"False",
+		"schedule": [
+			["True", "False", "True"]
+		],
+		"tabled_with": []
+	},
+	"Donna Ye": {
+		"officer":"False",
+		"schedule": [
+			["True", "True", "True"]
+		],
+		"tabled_with": []
+	},
+	"Grace Guo": {
+		"officer":"False",
+		"schedule": [
+			["False", "True", "False"]
+		],
+		"tabled_with": []
+	},
+	"Shalandy Zhang": {
+		"officer":"False",
+		"schedule": [
+			["False", "True", "True"]
+		],
+		"tabled_with": []
+	},
+	"Emily Zhu": {
+		"officer":"False",
+		"schedule": [
+			["True", "True", "False"]
+		],
+		"tabled_with": []
+	}
+}}
