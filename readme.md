@@ -55,3 +55,21 @@ py tabling_writer.py \path\to\out_week1.json \path\to\week1.json \path\to\week2.
 
 This will generate a JSON file at `\path\to\week2.json` that is valid as input to
 `tabling_annealer.py`, such that the entire process above can be repeated for future weeks.
+
+## Computer Science Background
+
+Tabling Scheduling for PBL is a generalization of the [Nurse Scheduling Problem](https://en.wikipedia.org/wiki/Nurse_scheduling_problem),
+and as such has NP-Hard complexity. This specific set of algorithms performs the following general steps:
+1. Greedy solution to officer scheduling (can fail in edge cases) to schedule one officer to each slots:
+	* Order all officers in ascending order of number of availabilities (chosen slots)
+	* Attempt to place each officer in this list into an unfilled slot from their availabilities
+2. Greedy solution to construct a valid scheduling of all members:
+	* Order members not scheduled in officer scheduling by number of availabilities
+	* Attempt to place each member in a slot that is not full from their availabilities
+3. Run [simulated annealing](https://en.wikipedia.org/wiki/Simulated_annealing) to minimize the total
+number of people tabling together who have tabled together in the past.
+	* One "move" is defined by moving a random member (not officer on duty) to a random
+		tabling slot that they have expressed as an availability.
+	* The "energy" of each state is defined as: for each member, count the number of people in their
+		tabling slot that have tabled with them before. Sum this quantity over all members. Simulated
+		annealing will attempt to minimize this quantity by "moving" between states.
