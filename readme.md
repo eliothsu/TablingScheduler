@@ -8,8 +8,8 @@ tabled together in the past.
 ## Requirements
 
 * Requires `python` version 3.0+
-* `pip install numpy`
-* `pip install simanneal` 
+* `sudo pip install numpy`
+* `sudo pip install simanneal` 
 
 ## Installation
 
