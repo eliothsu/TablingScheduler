@@ -10,6 +10,7 @@ tabled together in the past.
 * Requires `python` version 3.0+
 * `sudo pip install numpy`
 * `sudo pip install simanneal` 
+* `sudo pip install xlrd`
 
 ## Installation
 
