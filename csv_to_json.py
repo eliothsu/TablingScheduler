@@ -32,6 +32,8 @@ def process_data(csv_input, json_starter):
 	input_file_name = csv_input # make sure this input csv file exists in the same directory as this script
 	output_file_name = 'formatted_preferences.json' #eh dw the script will make the .json file if it isn't there
 
+	print(input_file_name)
+
 	#read csv line by line
 	with open(input_file_name, 'rb') as f: # why do i use with? it's like a try statement, and it closes the reader when done (cause im too lazy to close lol)
 		line_num = 1 #keep track of which line in csv file you're on
@@ -75,4 +77,4 @@ if __name__=="__main__":
     parser.add_argument("csv_input", type=str, help = "Member availabilities, .csv")
     parser.add_argument("json_starter", type=str, help = "Previous week's Member data, .json; if no previous data, use \"none.json\"")
     args = parser.parse_args()
-    scheduler = ExcelToJson(args.csv_input, args.json_starter)
+    process_data(args.csv_input, args.json_starter)
