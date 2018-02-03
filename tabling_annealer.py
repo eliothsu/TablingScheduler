@@ -58,17 +58,20 @@ class Scheduler():
         return officer_list, CM_list, availabilities, overlaps, number_of_slots
 
     def write_output(self, schedule, number_of_slots):
-        print("\nWriting schedule to " + self.outfile)
         out_schedule = []
-        slots_per_day = 3
-        number_of_days = 1
+        slots_per_day = 4
+        number_of_days = 5
         for day in range(number_of_days):
             out_schedule.append([])
             for slot in range(number_of_slots // number_of_days):
                 out_schedule[day].append(schedule[day*slots_per_day + slot])
 
         with open(self.outfile, 'w') as out:
+            print("Final schedule:")
+            print(json.dumps(out_schedule, indent=4))
             json.dump(out_schedule, out)
+            
+        print("\nWriting schedule to " + self.outfile)
 
     def run_officer_scheduling(self, officer_list, availabilities):
         print("Running officer scheduling...")
@@ -114,12 +117,14 @@ class Scheduler():
             slot = initial_schedule[slot_number]
             slot.insert(0, officer_schedule[slot_number])
 
-        print(initial_schedule)
+        # print(initial_schedule)
         return initial_schedule
 
     def run_member_scheduling(self, officer_schedule, initial_schedule, availabilities, overlaps):
         print("\nRunning member scheduling...")
-        member_scheduler = annealer.TablingAnnealer([member for member in self.member_list if member not in officer_schedule], initial_schedule[:], availabilities, overlaps, self.max_people_per_slot)
+        # print("Officer schedule: " + str(officer_schedule))
+        # print("All members: " + str([member for member in self.member_list if member not in officer_schedule]))
+        member_scheduler = annealer.TablingAnnealer([member for member in self.member_list if member not in officer_schedule[:20]], initial_schedule[:], availabilities, overlaps, self.max_people_per_slot)
         Tmax = 10.0
         Tmin = 0.1
         steps = 50000
@@ -131,7 +136,7 @@ class Scheduler():
 
         final_schedule, _ = member_scheduler.anneal()
         print("\n")
-        print(final_schedule)
+        # print(final_schedule)
         return final_schedule
 
 if __name__=="__main__":

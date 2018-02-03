@@ -73,7 +73,7 @@ def process_data(csv_input, json_starter):
 
 
 if __name__=="__main__":
-    parser = argparse.ArgumentParser(description = "Excel to JSON Converter")
+    parser = argparse.ArgumentParser(description = "CSV to JSON Converter")
     parser.add_argument("csv_input", type=str, help = "Member availabilities, .csv")
     parser.add_argument("json_starter", type=str, help = "Previous week's Member data, .json; if no previous data, use \"none.json\"")
     args = parser.parse_args()

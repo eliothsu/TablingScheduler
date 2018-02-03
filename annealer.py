@@ -9,6 +9,7 @@ class TablingAnnealer(Annealer):
 
     def __init__(self, members_arg, state, avail_arg, overlap_arg, max_people):
         self.members = members_arg
+        # print("number of members: " + str(len(self.members)))
         self.availabilities = avail_arg
         self.overlaps = overlap_arg
         self.max_people_per_slot = max_people
