@@ -33,8 +33,7 @@ git add -A
 git commit -m "Updating weekly tabling"
 git push
 ```
-to propagate the newly generated weekly schedule to [the tabling webpage](https://berkeleypbltech.github.io/PBLPortal/).
-8. That's it!
+to propagate the newly generated weekly schedule to [the tabling webpage](https://berkeleypbltech.github.io/PBLPortal/). That's it!
 
 ## In-Depth Usage (Partially outdated)
 
