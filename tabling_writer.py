@@ -24,8 +24,8 @@ class TablingWriter():
 
 if __name__=="__main__":
     parser = argparse.ArgumentParser(description = "Tabling Writer")
-    parser.add_argument("week_schedule", type=str, help = "Tabling schedule for the week, JSON")
     parser.add_argument("data_file", type=str, help = "Members' data file to write to, .json")
+    parser.add_argument("week_schedule", type=str, help = "Tabling schedule for the week, JSON")
     # parser.add_argument("final_data", type=str, help = "Final member's data file to write to (AFTER tabling this week)")
     args = parser.parse_args()
     scheduler = TablingWriter(args.week_schedule, args.data_file)
