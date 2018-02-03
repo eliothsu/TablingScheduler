@@ -32,10 +32,10 @@ def process_data(csv_input, json_starter):
 	input_file_name = csv_input # make sure this input csv file exists in the same directory as this script
 	output_file_name = 'formatted_preferences.json' #eh dw the script will make the .json file if it isn't there
 
-	print(input_file_name)
+	# print(input_file_name)
 
 	#read csv line by line
-	with open(input_file_name, 'rb') as f: # why do i use with? it's like a try statement, and it closes the reader when done (cause im too lazy to close lol)
+	with open(input_file_name, 'rt') as f: # why do i use with? it's like a try statement, and it closes the reader when done (cause im too lazy to close lol)
 		line_num = 1 #keep track of which line in csv file you're on
 		for line in csv.reader(f, quotechar = '"', delimiter = ',', # basically cleverly splits csv by cell (not by comma) cause cells may have multiple elements separated by commas
 								quoting = csv.QUOTE_ALL, skipinitialspace = True): # lol thanks stackoverflow how the hell would i have figured this out otherwise?
