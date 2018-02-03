@@ -4,11 +4,11 @@ import numpy as np
 
 class TablingWriter():
 
-    def __init__(self, schedule_file, initial_data, final_data):
+    def __init__(self, schedule_file, data_file):
         self.schedule = json.load(open(schedule_file))
-        self.initial_data = json.load(open(initial_data))
+        self.initial_data = json.load(open(data_file))
         self.parse_data()
-        self.write_data(final_data)
+        self.write_data(data_file)
 
     def parse_data(self):
         for day in self.schedule:
@@ -25,7 +25,7 @@ class TablingWriter():
 if __name__=="__main__":
     parser = argparse.ArgumentParser(description = "Tabling Writer")
     parser.add_argument("week_schedule", type=str, help = "Tabling schedule for the week, JSON")
-    parser.add_argument("initial_data", type=str, help = "Initial member's data (BEFORE tabling this week)")
-    parser.add_argument("final_data", type=str, help = "Final member's data file to write to (AFTER tabling this week)")
+    parser.add_argument("data_file", type=str, help = "Members' data file to write to, .json")
+    # parser.add_argument("final_data", type=str, help = "Final member's data file to write to (AFTER tabling this week)")
     args = parser.parse_args()
-    scheduler = TablingWriter(args.week_schedule, args.initial_data, args.final_data)
+    scheduler = TablingWriter(args.week_schedule, args.data_file)
