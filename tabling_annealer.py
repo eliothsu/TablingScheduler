@@ -16,7 +16,9 @@ class Scheduler():
 
     def run_scheduling(self):
         officer_list, CM_list, availabilities, overlaps, number_of_slots = self.parse_data(self.data)
-        officer_schedule = self.run_officer_scheduling(officer_list, availabilities)
+        valid_scheduling = False
+        while (not valid_scheduling):
+            officer_schedule, valid_scheduling = self.run_officer_scheduling(officer_list, availabilities)
         initial_schedule = self.create_initial_schedule(officer_schedule, availabilities, number_of_slots)
         final_schedule = self.run_member_scheduling(officer_schedule, initial_schedule, availabilities, overlaps)
         self.write_output(final_schedule, number_of_slots)
@@ -67,18 +69,19 @@ class Scheduler():
                 out_schedule[day].append(schedule[day*slots_per_day + slot])
 
         with open(self.outfile, 'w') as out:
-            print("Final schedule:")
-            print(json.dumps(out_schedule, indent=4))
+            # print("Final schedule:")
+            # print(json.dumps(out_schedule, indent=4))
             json.dump(out_schedule, out)
             
         print("\nWriting schedule to " + self.outfile)
 
     def run_officer_scheduling(self, officer_list, availabilities):
+        valid_scheduling = True
         print("Running officer scheduling...")
         officer_scheduler = officer_annealer.OfficerAnnealer(officer_list[:], availabilities)
         Tmax = 10.0
         Tmin = 0.01
-        steps = 50000
+        steps = 100000
         
         officer_scheduler.Tmax = Tmax
         officer_scheduler.Tmin = Tmin
@@ -88,9 +91,10 @@ class Scheduler():
         schedule, number_of_schedule_conflicts = officer_scheduler.anneal()
         print("\n")
         if number_of_schedule_conflicts > 0:
-            print("Error, invalid scheduling!")
-        print(schedule)
-        return schedule
+            print("Error, invalid officer scheduling! Rerunning...")
+            valid_scheduling = False
+        # print(schedule)
+        return schedule, valid_scheduling
 
     def create_initial_schedule(self, officer_schedule, availabilities, number_of_slots):
         print("\n\nCreating initial schedule...")

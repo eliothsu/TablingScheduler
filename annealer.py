@@ -42,4 +42,6 @@ class TablingAnnealer(Annealer):
                 for member_2 in slot:
                     if member_2 in self.overlaps[member_1]:
                         energy_value += 1
+            if (len(slot) < 2):
+                energy_value += 5
         return energy_value
