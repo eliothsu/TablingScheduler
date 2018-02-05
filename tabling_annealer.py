@@ -78,6 +78,7 @@ class Scheduler():
     def run_officer_scheduling(self, officer_list, availabilities):
         valid_scheduling = True
         print("Running officer scheduling...")
+        # print(officer_list[:])
         officer_scheduler = officer_annealer.OfficerAnnealer(officer_list[:], availabilities)
         Tmax = 10.0
         Tmin = 0.01
