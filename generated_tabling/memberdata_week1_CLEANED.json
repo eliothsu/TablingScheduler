@@ -1262,8 +1262,7 @@
       ]
     ],
     "tabled_with": [
-      "kristinalee@berkeley.edu",
-      "elliotryu@berkeley.edu"
+      "kristinalee@berkeley.edu"
     ]
   },
   "janet.m.xu@berkeley.edu": {
@@ -1576,8 +1575,7 @@
       ]
     ],
     "tabled_with": [
-      "svfang@berkeley.edu",
-      "elliotryu@berkeley.edu"
+      "svfang@berkeley.edu"
     ]
   },
   "ldelacruz395@berkeley.edu": {
@@ -2648,45 +2646,6 @@
     "tabled_with": [
       "nancysiyuchen@berkeley.edu",
       "liukan07@berkeley.edu"
-    ]
-  },
-  "elliotryu@berkeley.edu": {
-    "officer": "False",
-    "schedule": [
-      [
-        "True",
-        "True",
-        "True",
-        "True"
-      ],
-      [
-        "True",
-        "True",
-        "True",
-        "True"
-      ],
-      [
-        "True",
-        "True",
-        "True",
-        "True"
-      ],
-      [
-        "True",
-        "True",
-        "True",
-        "True"
-      ],
-      [
-        "True",
-        "True",
-        "True",
-        "True"
-      ]
-    ],
-    "tabled_with": [
-      "svfang@berkeley.edu",
-      "kristinalee@berkeley.edu"
     ]
   }
 }
