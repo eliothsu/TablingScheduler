@@ -1,17 +1,20 @@
 import argparse
 import json
 import numpy as np
+import csv
 
 class TablingReporter():
     number_of_days = -1
     slots_per_day = -1
+    # lookup_table = {}
 
     def __init__(self, schedule_file, noshow, swap):
         self.schedule = json.load(open(schedule_file))
         self.number_of_days = len(self.schedule)
         self.slots_per_day = len(self.schedule[0])
-        self.output_file = output_file
+        self.output_file = schedule_file
         self.member_list = self.flatten(self.schedule)
+        # self.populate_lookup(lookup_file)
         if noshow != None:
             noshow[0].strip("\"")
             self.report_noshow(noshow[0], int(noshow[1]))
@@ -22,6 +25,11 @@ class TablingReporter():
             swap[3] = int(swap[3])
             self.report_swap(swap)
         self.write_schedule(schedule_file)
+
+    # def populate_lookup(self, lookup_file):
+    #     with open(lookup_file, 'rt') as f:
+    #         for line in csv.reader(f):
+    #             self.lookup_table[line[1]] = line[0]
 
     def report_noshow(self, name, slot_num):
         self.remove_member(name, slot_num)
@@ -57,6 +65,7 @@ class TablingReporter():
             raise Exception("\"" + name + "\"" + " not found in list of members.")
 
     def write_schedule(self, schedule_file):
+        print(json.dumps(self.schedule, indent=4, sort_keys=True))
         with open(schedule_file, 'w') as out:
             json.dump(self.schedule, out)
 
@@ -79,6 +88,7 @@ class TablingReporter():
 if __name__=="__main__":
     parser = argparse.ArgumentParser(description = "Tabling Reporter", epilog = "\"Tabling slot number\" is as follows: 0 for 10-11am Monday, 1 for 11am-12pm Monday... 4 for 10-11am Tuesday, and so on")
     parser.add_argument("week_schedule", type=str, help = "Weekly schedule to modify, JSON")
+    # parser.add_argument("lookup_filename", type=str, help = "Lookup table for emails and names, .csv")
     parser.add_argument("--noshow", nargs=2, type=str, help = "Report a no-show: --noshow \"Name of person\" [tabling slot number]")
     parser.add_argument("--swap", nargs=4, type=str, help = "Report a tabling swap: -s \"Name 1\" [slot #1] \"Name 2\" [slot #2]")
     args = parser.parse_args()
