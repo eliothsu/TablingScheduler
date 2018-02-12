@@ -27,7 +27,7 @@ def convert_to_names(in_file, lookup_csv) :
 	#populate the lookup_table with contents of lookup.csv
 	with open(lookup_file, 'rt') as f:
 		for line in csv.reader(f):
-			lookup_table[line[0]] = line[1]
+			lookup_table[line[1]] = line[0]
 
 	# read the json file (yep its that ez man)
 	with open(input_file, 'r') as f:
@@ -35,7 +35,7 @@ def convert_to_names(in_file, lookup_csv) :
 
 	# go thru the dictionary, replace emails with names
 	for row in dictionary:
-		# print(row)
+		# print(lookup_table)
 		for slot in row:
 			for i, val in enumerate(slot):
 				if (val in lookup_table):

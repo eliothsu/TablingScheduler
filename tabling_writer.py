@@ -16,7 +16,7 @@ class TablingWriter():
     def populate_lookup(self, lookup_file):
         with open(lookup_file, 'rt') as f:
             for line in csv.reader(f):
-                self.lookup[line[1]] = line[0]
+                self.lookup[line[0]] = line[1]
 
     def replace_schedule_with_emails(self):
         print(self.schedule)
@@ -32,6 +32,7 @@ class TablingWriter():
             for slot in day:
                 for member_1 in slot:
                     for member_2 in slot:
+                        # print(self.lookup[member_1], self.lookup[member_2])
                         if member_1 != member_2 and self.lookup[member_2] not in self.initial_data[self.lookup[member_1]]["tabled_with"]:
                             self.initial_data[self.lookup[member_1]]["tabled_with"].append(self.lookup[member_2])
 
