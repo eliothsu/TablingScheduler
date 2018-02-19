@@ -11,6 +11,7 @@ class Scheduler():
 
     def __init__(self, json_string, outfile):
         self.data = json.load(open(json_string))
+        # print(len(self.data))
         self.outfile = outfile
         self.run_scheduling()
 

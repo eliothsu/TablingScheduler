@@ -65,7 +65,7 @@ class TablingReporter():
             raise Exception("\"" + name + "\"" + " not found in list of members.")
 
     def write_schedule(self, schedule_file):
-        print(json.dumps(self.schedule, indent=4, sort_keys=True))
+        # print(json.dumps(self.schedule, indent=4, sort_keys=True))
         with open(schedule_file, 'w') as out:
             json.dump(self.schedule, out)
 
