@@ -95,6 +95,7 @@ class Scheduler():
         if number_of_schedule_conflicts > 0:
             print("Error, invalid officer scheduling! Rerunning...")
             valid_scheduling = False
+        print(len(schedule))
         # print(schedule)
         return schedule, valid_scheduling
 
