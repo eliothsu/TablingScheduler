@@ -95,7 +95,7 @@ class Scheduler():
         if number_of_schedule_conflicts > 0:
             print("Error, invalid officer scheduling! Rerunning...")
             valid_scheduling = False
-        print(len(schedule))
+        # print(len(schedule))
         # print(schedule)
         return schedule, valid_scheduling
 
@@ -134,7 +134,7 @@ class Scheduler():
         member_scheduler = annealer.TablingAnnealer([member for member in self.member_list if member not in officer_schedule[:20]], initial_schedule[:], availabilities, overlaps, self.max_people_per_slot)
         Tmax = 10.0
         Tmin = 0.1
-        steps = 50000
+        steps = 100000
         
         member_scheduler.Tmax = Tmax
         member_scheduler.Tmin = Tmin
