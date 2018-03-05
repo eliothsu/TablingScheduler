@@ -1,16 +1,16 @@
 Timestamp,Email Address,officer,schedule [Monday],schedule [Tuesday],schedule [Wednesday],schedule [Thursday],schedule [Friday]
 2/3/2018 15:05:39,tae.kim@berkeley.edu,TRUE,"10AM~11AM, 11AM~12PM, 12PM~1PM, 1PM~2PM",n/a,n/a,"12PM~1PM, 1PM~2PM","10AM~11AM, 11AM~12PM, 12PM~1PM, 1PM~2PM"
-2/18/2018 20:43:14,eliothsu@berkeley.edu,TRUE,"10AM~11AM, 11AM~12PM","10AM~11AM, 11AM~12PM, n/a",12PM~1PM,n/a,"10AM~11AM, 11AM~12PM"
+3/4/2018 22:08:37,eliothsu@berkeley.edu,TRUE,11AM~12PM,"10AM~11AM, 11AM~12PM","11AM~12PM, 12PM~1PM",n/a,"10AM~11AM, 11AM~12PM"
 2/16/2018 15:30:32,taylorluwang@berkeley.edu,TRUE,"11AM~12PM, 12PM~1PM",n/a,n/a,n/a,n/a
-2/19/2018 17:21:06,coreygibbel@berkeley.edu,TRUE,"11AM~12PM, 12PM~1PM",12PM~1PM,"11AM~12PM, 12PM~1PM",12PM~1PM,12PM~1PM
+3/3/2018 14:15:47,coreygibbel@berkeley.edu,TRUE,"11AM~12PM, 12PM~1PM",n/a,n/a,n/a,"11AM~12PM, 12PM~1PM"
 2/2/2018 18:33:08,carringtondpark@berkeley.edu,TRUE,"11AM~12PM, 12PM~1PM","11AM~12PM, 12PM~1PM","11AM~12PM, 12PM~1PM","11AM~12PM, 12PM~1PM","11AM~12PM, 12PM~1PM"
-2/16/2018 20:52:05,alexparkap@berkeley.edu,TRUE,"10AM~11AM, 11AM~12PM, 12PM~1PM, 1PM~2PM, n/a",n/a,n/a,n/a,n/a
-2/3/2018 15:02:57,hi.hermes.ip@berkeley.edu,TRUE,"11AM~12PM, 12PM~1PM","11AM~12PM, 12PM~1PM","11AM~12PM, 12PM~1PM","11AM~12PM, 12PM~1PM",n/a
+2/25/2018 17:41:18,alexparkap@berkeley.edu,TRUE,n/a,"11AM~12PM, 12PM~1PM",n/a,"11AM~12PM, 12PM~1PM","11AM~12PM, n/a"
+2/25/2018 16:09:07,hi.hermes.ip@berkeley.edu,TRUE,11AM~12PM,"11AM~12PM, 12PM~1PM","11AM~12PM, 12PM~1PM","11AM~12PM, 12PM~1PM",n/a
 2/11/2018 16:24:28,lli20@berkeley.edu,TRUE,n/a,11AM~12PM,n/a,11AM~12PM,n/a
 2/11/2018 18:08:15,nancysiyuchen@berkeley.edu,TRUE,n/a,n/a,n/a,n/a,"11AM~12PM, 12PM~1PM"
-2/2/2018 18:52:05,renasong@berkeley.edu,TRUE,n/a,"11AM~12PM, 12PM~1PM, 1PM~2PM",n/a,"10AM~11AM, 11AM~12PM, 12PM~1PM, 1PM~2PM",n/a
+2/26/2018 11:00:36,renasong@berkeley.edu,TRUE,11AM~12PM,"11AM~12PM, 12PM~1PM, 1PM~2PM",11AM~12PM,"11AM~12PM, 12PM~1PM, 1PM~2PM",11AM~12PM
 2/2/2018 20:24:33,emilyjin@berkeley.edu,TRUE,"10AM~11AM, 12PM~1PM, 1PM~2PM",n/a,"10AM~11AM, 12PM~1PM, 1PM~2PM",n/a,"10AM~11AM, 12PM~1PM, 1PM~2PM"
-2/2/2018 20:53:06,wenboguo@berkeley.edu,TRUE,"11AM~12PM, 12PM~1PM, 1PM~2PM","11AM~12PM, 12PM~1PM, 1PM~2PM",1PM~2PM,"11AM~12PM, 12PM~1PM, 1PM~2PM",1PM~2PM
+3/4/2018 15:41:36,wenboguo@berkeley.edu,TRUE,"11AM~12PM, 12PM~1PM","11AM~12PM, 12PM~1PM",n/a,n/a,n/a
 2/4/2018 11:24:18,bjfeng@berkeley.edu,TRUE,"10AM~11AM, 11AM~12PM, 12PM~1PM",10AM~11AM,"10AM~11AM, 11AM~12PM, 12PM~1PM",10AM~11AM,"10AM~11AM, 11AM~12PM"
 2/3/2018 15:09:33,emeri.zhang@berkeley.edu,TRUE,"12PM~1PM, 1PM~2PM",n/a,"12PM~1PM, 1PM~2PM",n/a,n/a
 2/4/2018 22:47:20,carolinejchen@berkeley.edu,FALSE,1PM~2PM,"12PM~1PM, 1PM~2PM",n/a,11AM~12PM,1PM~2PM
@@ -29,7 +29,7 @@ Timestamp,Email Address,officer,schedule [Monday],schedule [Tuesday],schedule [W
 2/3/2018 15:05:19,lijw@berkeley.edu,FALSE,10AM~11AM,n/a,10AM~11AM,n/a,"12PM~1PM, 1PM~2PM"
 2/3/2018 15:05:22,meganwang1998@berkeley.edu,FALSE,"10AM~11AM, 11AM~12PM, 12PM~1PM",11AM~12PM,10AM~11AM,"11AM~12PM, 12PM~1PM, 1PM~2PM",n/a
 2/3/2018 15:05:26,troylee@berkeley.edu,FALSE,10AM~11AM,1PM~2PM,1PM~2PM,12PM~1PM,10AM~11AM
-2/19/2018 0:32:03,amchan@berkeley.edu,TRUE,n/a,11AM~12PM,n/a,n/a,n/a
+2/26/2018 11:52:53,amchan@berkeley.edu,TRUE,n/a,n/a,n/a,n/a,12PM~1PM
 2/3/2018 15:05:30,svfang@berkeley.edu,TRUE,n/a,n/a,12PM~1PM,n/a,n/a
 2/3/2018 15:05:43,janet.m.xu@berkeley.edu,FALSE,12PM~1PM,n/a,12PM~1PM,n/a,12PM~1PM
 2/3/2018 15:05:47,mihu9810@berkeley.edu,FALSE,11AM~12PM,12PM~1PM,11AM~12PM,12PM~1PM,11AM~12PM
@@ -45,10 +45,10 @@ Timestamp,Email Address,officer,schedule [Monday],schedule [Tuesday],schedule [W
 2/3/2018 15:07:43,ssujo@berkeley.edu,FALSE,"11AM~12PM, 12PM~1PM",n/a,"11AM~12PM, 12PM~1PM",11AM~12PM,12PM~1PM
 2/3/2018 15:07:44,anthonychen98@berkeley.edu,FALSE,n/a,"10AM~11AM, 1PM~2PM",n/a,"10AM~11AM, 1PM~2PM",n/a
 2/3/2018 15:08:17,alexpark97@berkeley.edu,FALSE,n/a,10AM~11AM,"10AM~11AM, 11AM~12PM",10AM~11AM,n/a
-2/3/2018 15:19:09,ozairkhan@berkeley.edu,TRUE,"12PM~1PM, 1PM~2PM","12PM~1PM, 1PM~2PM","12PM~1PM, 1PM~2PM",11AM~12PM,"12PM~1PM, 1PM~2PM"
+2/25/2018 17:51:12,ozairkhan@berkeley.edu,FALSE,12PM~1PM,"11AM~12PM, 12PM~1PM",12PM~1PM,11AM~12PM,12PM~1PM
 2/3/2018 16:36:39,hjeong21@berkeley.edu,FALSE,1PM~2PM,11AM~12PM,1PM~2PM,11AM~12PM,1PM~2PM
 2/10/2018 23:30:52,lzheng@berkeley.edu,FALSE,n/a,12PM~1PM,11AM~12PM,n/a,1PM~2PM
-2/3/2018 21:13:47,arinayu.99@berkeley.edu,FALSE,10AM~11AM,1PM~2PM,12PM~1PM,n/a,10AM~11AM
+3/4/2018 20:09:40,arinayu.99@berkeley.edu,FALSE,10AM~11AM,n/a,12PM~1PM,n/a,10AM~11AM
 2/4/2018 23:09:44,leona.chen@berkeley.edu,FALSE,n/a,"11AM~12PM, 12PM~1PM, 1PM~2PM",n/a,"11AM~12PM, 12PM~1PM, 1PM~2PM",n/a
 2/4/2018 9:26:25,ricksurya@berkeley.edu,FALSE,1PM~2PM,"12PM~1PM, 1PM~2PM",n/a,"12PM~1PM, 1PM~2PM",1PM~2PM
 2/4/2018 10:28:11,npalmer@berkeley.edu,FALSE,"10AM~11AM, 12PM~1PM, 1PM~2PM","10AM~11AM, 11AM~12PM",10AM~11AM,"10AM~11AM, 11AM~12PM","10AM~11AM, 12PM~1PM, 1PM~2PM"
@@ -56,12 +56,11 @@ Timestamp,Email Address,officer,schedule [Monday],schedule [Tuesday],schedule [W
 2/4/2018 10:53:26,rafay695@berkeley.edu,FALSE,12PM~1PM,"11AM~12PM, 12PM~1PM",12PM~1PM,10AM~11AM,12PM~1PM
 2/4/2018 11:36:16,adai17@berkeley.edu,FALSE,"10AM~11AM, 11AM~12PM, 12PM~1PM",1PM~2PM,"10AM~11AM, 11AM~12PM, 12PM~1PM",1PM~2PM,"10AM~11AM, 11AM~12PM, 12PM~1PM, 1PM~2PM"
 2/4/2018 11:41:56,sabni@berkeley.edu,TRUE,10AM~11AM,n/a,1PM~2PM,"12PM~1PM, 1PM~2PM",1PM~2PM
-2/16/2018 17:37:27,thuang87@berkeley.edu,FALSE,n/a,12PM~1PM,"12PM~1PM, 1PM~2PM",12PM~1PM,"12PM~1PM, 1PM~2PM"
+2/26/2018 0:37:51,thuang87@berkeley.edu,FALSE,n/a,12PM~1PM,"12PM~1PM, 1PM~2PM",10AM~11AM,"12PM~1PM, 1PM~2PM"
 2/4/2018 19:15:34,mwang951@berkeley.edu,FALSE,"11AM~12PM, 12PM~1PM, 1PM~2PM","11AM~12PM, 12PM~1PM, 1PM~2PM","12PM~1PM, 1PM~2PM",n/a,"11AM~12PM, 12PM~1PM, 1PM~2PM"
 2/4/2018 19:20:09,shin.sarah28@berkeley.edu,TRUE,"12PM~1PM, 1PM~2PM","12PM~1PM, 1PM~2PM","12PM~1PM, 1PM~2PM","12PM~1PM, 1PM~2PM","12PM~1PM, 1PM~2PM"
 2/4/2018 19:23:47,adam.liu@berkeley.edu,FALSE,1PM~2PM,n/a,1PM~2PM,n/a,n/a
 2/4/2018 21:07:52,williamk0408@berkeley.edu,FALSE,n/a,10AM~11AM,"10AM~11AM, 11AM~12PM",n/a,n/a
 2/4/2018 21:09:50,kailchen21@berkeley.edu,FALSE,"10AM~11AM, 12PM~1PM, 1PM~2PM",10AM~11AM,"12PM~1PM, 1PM~2PM","10AM~11AM, 1PM~2PM","10AM~11AM, 12PM~1PM, 1PM~2PM"
 2/5/2018 0:38:02,mchoi1215@berkeley.edu,TRUE,12PM~1PM,10AM~11AM,12PM~1PM,10AM~11AM,12PM~1PM
-2/5/2018 9:32:42,sterlingyichuchen@berkeley.edu,FALSE,12PM~1PM,"10AM~11AM, 11AM~12PM, 12PM~1PM",12PM~1PM,"10AM~11AM, 1PM~2PM","11AM~12PM, 12PM~1PM"
 2/7/2018 11:15:47,annysong@berkeley.edu,FALSE,n/a,12PM~1PM,n/a,n/a,n/a
