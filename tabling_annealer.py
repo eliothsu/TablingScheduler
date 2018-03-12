@@ -83,7 +83,7 @@ class Scheduler():
         officer_scheduler = officer_annealer.OfficerAnnealer(officer_list[:], availabilities)
         Tmax = 10.0
         Tmin = 0.01
-        steps = 100000
+        steps = 150000
         
         officer_scheduler.Tmax = Tmax
         officer_scheduler.Tmin = Tmin
@@ -134,7 +134,7 @@ class Scheduler():
         member_scheduler = annealer.TablingAnnealer([member for member in self.member_list if member not in officer_schedule[:20]], initial_schedule[:], availabilities, overlaps, self.max_people_per_slot)
         Tmax = 10.0
         Tmin = 0.1
-        steps = 100000
+        steps = 150000
         
         member_scheduler.Tmax = Tmax
         member_scheduler.Tmin = Tmin
